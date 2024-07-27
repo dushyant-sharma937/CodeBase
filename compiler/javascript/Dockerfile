@@ -26,5 +26,6 @@ RUN chmod +x ./runner.sh ./check_and_run.sh
 # Run the check_and_run script and API server as background services
 CMD ["sh", "-c", "./check_and_run.sh & node /usr/src/app/api-server/server.js"]
 
+
 # docker build -t code-runner .
 # docker run -d -p 5000:5000 code-runner
